@@ -1,2 +1,7 @@
-== DINER
-home of the app
+== Blank App with Login
+- check me out.
+- update config/database.yml.sample and rename to config/database.yml
+- rake db:create
+- rake db:migrate
+
+You're all set up!
