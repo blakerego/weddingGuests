@@ -42,7 +42,7 @@ gem 'binding_of_caller'
 gem 'meta_request'
 gem 'awesome_print'
 
-gem 'debugger'
+# gem 'debugger'
 gem 'pry'
 gem 'pry_debug'
 gem 'pry-remote'
