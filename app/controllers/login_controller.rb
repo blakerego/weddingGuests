@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
   def create
-    render :text => env["omniauth.auth"].to_yaml
+    auth = env["omniauth.auth"]
   end
 end
