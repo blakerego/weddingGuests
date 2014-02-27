@@ -6,5 +6,4 @@
 - if !user_signed_in?
   .sign_in
     = link_to image_tag('google_64.png'), '/auth/google_oauth2/'
-    %h3
-      Log in Now
+    %h3= link_to 'Log in Now', '/auth/google_oauth2/'
