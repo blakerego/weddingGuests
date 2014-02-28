@@ -34,4 +34,17 @@ group :doc do
 end
 
 gem 'omniauth'
+gem 'omniauth-google-oauth2'
 gem 'devise'
+
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'meta_request'
+gem 'awesome_print'
+gem 'authbuttons-rails'
+
+gem 'pry'
+gem 'pry_debug'
+gem 'pry-remote'
+gem 'pry-nav'
+gem 'newrelic_rpm'
