@@ -1,4 +1,6 @@
 Diner::Application.routes.draw do
+  resources :guests
+
   resources :authentications
 
   devise_for :users
