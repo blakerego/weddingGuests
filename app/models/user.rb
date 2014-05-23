@@ -15,8 +15,6 @@ class User < ActiveRecord::Base
     (authentications.empty? || !password.blank?) && super
   end
 
-
-
   def assign_code
     code = (0...6).map { ('A'..'Z').to_a[rand(26)] }.join
     self.update_attributes(:code => code)
