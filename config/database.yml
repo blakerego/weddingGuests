@@ -1,11 +1,11 @@
 development: &development
   adapter: postgresql
   host: localhost
-  database: myapp_dev
+  database: weddingGuests_dev
   encoding: unicode
   
 test: &test
   adapter: postgresql
   host: localhost
-  database: myapp_test
+  database: weddingGuests_test
   encoding: unicode
