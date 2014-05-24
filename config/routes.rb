@@ -1,4 +1,6 @@
 Diner::Application.routes.draw do
+  resources :rsvps
+
   resources :guests
 
   resources :authentications
