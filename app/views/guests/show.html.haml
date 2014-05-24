@@ -1,0 +1,21 @@
+%p#notice
+  = notice
+
+%p
+  %strong Firstname:
+  = @guest.firstname
+
+%p
+  %strong Lastname:
+  = @guest.lastname
+
+%p
+  %strong Code
+  = @guest.rsvp.code if @guest.rsvp.present?
+
+%p
+  %strong Email
+  = @guest.email
+
+= link_to 'Edit', edit_guest_path(@guest) | 
+= link_to 'Back', guests_path
