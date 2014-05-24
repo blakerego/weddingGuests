@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140524124149) do
+ActiveRecord::Schema.define(version: 20140524124443) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140524124149) do
     t.datetime "updated_at"
     t.string   "meal_choice"
     t.boolean  "is_attending"
+    t.integer  "rsvp_id"
   end
 
   create_table "rsvps", force: true do |t|
