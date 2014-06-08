@@ -44,6 +44,65 @@
 
 .underline {
   &:hover {
-    border-bottom: 5px solid #ffd62c
+    border-bottom: 5px solid $gold;
   }
+}
+
+.section {
+  width: 100%;
+  margin-top: 20px;
+
+  .section_title
+  {
+    color:black;
+    font-family: Pacifico;
+    font-size: 50px;
+    text-align: center;
+    background-color: #ffd62c;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .welcome-box {
+    border: 5px dotted black;
+    color: black;
+    font-size: 22px;
+    font-family: HelveticaNeue;
+    padding: 5px 13px;
+    width: 562px;
+    font-style:italic;
+    line-height: 26px;
+    span {
+      color: $gold;
+      font-style:italic;
+    }
+  }
+
+  .yellow-box {
+    width: 220px;
+    height: auto;
+    background-color: $gold;
+    display: inline-block;
+    padding: 5px 13px;
+    @media only screen and (max-width: 802px) {
+      display: none;
+    }
+  }
+
+  .profile_label
+  {
+    margin: 15px auto;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -.07em;
+    font-weight: 400;
+    font-family: Vinyl;
+    font-size: 26px;
+    color: #000000;
+  }
+
+}
+
+body {
+  overflow-x: hidden;
 }
