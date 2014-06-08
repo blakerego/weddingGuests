@@ -16,6 +16,7 @@
 }
 
 .nav {
+  margin-top: 20px;
   text-align: center;
   // min-width: 1024px;
   a {
@@ -38,5 +39,11 @@
     letter-spacing: -.07em;
     padding: 19px 39px 19px 0px;
 
+  }
+}
+
+.underline {
+  &:hover {
+    border-bottom: 5px solid #ffd62c
   }
 }
