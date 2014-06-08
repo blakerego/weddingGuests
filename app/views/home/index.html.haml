@@ -39,6 +39,18 @@
       .yellow-box
         %p.ceremony-start-text
           The ceremony begins in:
+          %script
+            TargetDate = "01/17/2015 5:00 PM";
+            BackColor = "#000000";
+            ForeColor = "#000000";
+            CountActive = true;
+            CountStepper = -1;
+            LeadingZero = true;
+            DisplayFormat = "";
+            %h1 %%D%% Days
+            = succeed "\";" do
+              %h3 %%H%% Hrs &amp; %%M%% Mins
+            FinishMessage = "It's Finally Here!";
 
 
 .section.about
@@ -53,10 +65,17 @@
         Blake
     = image_tag "blake.jpg"
 
-.section.proposal
-  .section_title
+    .text.col-md-8.col-md-offset-2
+      %h1 How We Met
+      %p
+        When Michelle was in law school in Boston, a mutual friend and classmate often invited Blake (one of her college friends) to various law school events. From trips to Maine to sushi nights, Blake and Michelle were always at the same events with the same circle of friends, but they hardly talked. Little did Michelle know that Blake secretly had a crush on her.
+      %p
+        Finally, when the two of them were playing pool one night, Blake asked Michelle on a date. He suggested they go movie hopping over the long weekend. Michelle immediately said she was too busy, but then quickly changed her mind and said yes. Over Columbus Day weekend of 2010, they went on a three movie marathon date and then to dinner afterward. The rest is history!
+
+.section.proposal.row
+  .title
     Proposal
-  .proposal_text
+  .text.col-md-8.col-md-offset-2
     %h1 How it all happened
     %p
       In August 2013, we were selling all our belongings, packing up, and getting ready to leave NYC. During this time, Michelle was taking a design class every Wednesday night. One evening, as the class was ending, Michelle called Blake and asked if she should pick up sandwiches for dinner. Blake told her that he would order some Indian food, and that she should just come straight home.
@@ -64,4 +83,44 @@
         %br
           Thirty minutes later, Michelle came home and smelled something amazing cooking as she walked down the hallway. When she opened the door, she was surprised to see rose petals lining the table, candles, wine, and a bouquet of beautiful roses. Moreover, Blake had prepared a gourmet meal of steak, potatoes and asparagus with some help from a kind employee at Whole Foods. Blake immediately got down on one knee and proposed. Michelle cried of course, and said yes!
 
+  .col-md-4.col-md-offset-2.col-xs-12
+    = image_tag "proposal1.jpg"
+  .col-md-4.col-xs-12
+    = image_tag "ring.jpg"
 
+.section.attendants.row
+  .title
+    Wedding Party
+  .row.portraits
+    .col-md-4.col-md-offset-2
+      %h1 Bride's Attendants
+      = image_tag "char.jpg"
+      %h2 Charmiane Lieu
+      = image_tag "lindseyR.jpg"
+      %h2 Lindsey Rhodes
+      = image_tag "david.jpg"
+      %h2 David Rittner
+      = image_tag "lindseyF.jpg"
+      %h2 Lindsey Fernandez
+      = image_tag "jason.jpg"
+      %h2 Jason Chen
+      = image_tag "laura.jpg"
+      %h2 Laura Snizek
+      = image_tag "jessica.jpg"
+      %h2 Jessica Lin
+    .col-md-4
+      %h1 Groom's Attendants
+      = image_tag "brian.jpg"
+      %h2 Brian Tovar
+      = image_tag "antonio.jpg"
+      %h2 Antonio Dell'Aglio
+      = image_tag "kyle.jpg"
+      %h2 Kyle Rego
+      = image_tag "charley.jpg"
+      %h2 Charley McMillan
+      = image_tag "manav.jpg"
+      %h2 Manav Malhotra
+      = image_tag "matthew.jpg"
+      %h2 Matthew Gordon
+      = image_tag "journee.jpg"
+      %h2 Journee Isip

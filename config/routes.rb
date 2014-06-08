@@ -8,6 +8,7 @@ Diner::Application.routes.draw do
   devise_for :users
   # root 'home#index'
   root 'home#coming_soon'
+  get '/home' => 'home#index'
   get 'auth/:provider/callback' => 'authentications#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
