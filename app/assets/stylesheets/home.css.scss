@@ -54,6 +54,19 @@ $gold: #ffd62c;
   width: 100%;
   margin-top: 20px;
 
+  h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -.07em;
+    font-weight: 400;
+    font-family: Vinyl;
+    font-size: 26px;
+    color: #000000;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   .title
   {
     color:black;
@@ -117,18 +130,6 @@ $gold: #ffd62c;
   .portraits {
     margin-top: 20px;
     text-align: center;
-    h1 {
-      font-size: 28px;
-      text-transform: uppercase;
-      letter-spacing: -.07em;
-      font-weight: 400;
-      font-family: Vinyl;
-      font-size: 26px;
-      color: #000000;
-      margin-top: 50px;
-      text-align: center;
-      padding-bottom: 20px;
-    }
     h2 {
       text-transform: uppercase;
       letter-spacing: -.05em;
@@ -141,6 +142,33 @@ $gold: #ffd62c;
   }
 }
 
+.travel {
+  .cursive {
+    font-family: Pacifico;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .hotel-info {
+    text-align: center;
+  }
+  .map {
+    margin-top: 10px;
+  }
+  hr {
+    border: 3px solid #ffd62c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+#cntdwn
+{
+  text-align: center;
+  line-height: 0.7;
+  font-family: HelveticaNeue;
+}
 
 body {
   overflow-x: hidden;

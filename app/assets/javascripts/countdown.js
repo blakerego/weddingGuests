@@ -37,7 +37,9 @@ function CountBack(secs) {
   DisplayStr = DisplayStr.replace(/%%M%%/g, calcage(secs,60,60));
   DisplayStr = DisplayStr.replace(/%%S%%/g, calcage(secs,1,60));
 
-  document.getElementById("cntdwn").innerHTML = DisplayStr;
+  if ($('#cntdwn').length > 0) {
+    document.getElementById("cntdwn").innerHTML = DisplayStr;
+  }
   if (CountActive)
     setTimeout("CountBack(" + (secs+CountStepper) + ")", SetTimeOutPeriod);
 }
@@ -52,9 +54,9 @@ if (typeof(BackColor)=="undefined")
 if (typeof(ForeColor)=="undefined")
   ForeColor= "black";
 if (typeof(TargetDate)=="undefined")
-  TargetDate = "12/31/2020 5:00 AM";
+  TargetDate = "01/17/2015 5:00 PM";
 if (typeof(DisplayFormat)=="undefined")
-  DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
+  DisplayFormat = "<h1>%%D%% Days</h1><h3> %%H%% Hours & %%M%% Minutes</h3>";
 if (typeof(CountActive)=="undefined")
   CountActive = true;
 if (typeof(FinishMessage)=="undefined")
@@ -69,7 +71,6 @@ CountStepper = Math.ceil(CountStepper);
 if (CountStepper == 0)
   CountActive = false;
 var SetTimeOutPeriod = (Math.abs(CountStepper)-1)*1000 + 990;
-putspan(BackColor, ForeColor);
 var dthen = new Date(TargetDate);
 var dnow = new Date();
 if(CountStepper>0)
