@@ -99,10 +99,27 @@ $gold: #ffd62c;
     background-color: $gold;
     display: inline-block;
     padding: 5px 13px;
+    text-align: center;
     @media only screen and (max-width: 802px) {
       display: none;
     }
   }
+
+  #cntdwn
+  {
+    line-height: 1.2;
+    font-family: HelveticaNeue;
+    margin-top: 10px;
+    padding-top: 20px;
+    height: 100px;
+    .days {
+      font-size: 28px;
+    }
+    .hours {
+      font-size: 16px;
+    }
+  }
+
 
   .profile_label
   {
@@ -161,13 +178,6 @@ $gold: #ffd62c;
     margin-bottom: 20px;
   }
 
-}
-
-#cntdwn
-{
-  text-align: center;
-  line-height: 0.7;
-  font-family: HelveticaNeue;
 }
 
 body {
