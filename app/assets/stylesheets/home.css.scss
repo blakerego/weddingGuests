@@ -84,9 +84,9 @@ $gold: #ffd62c;
     font-size: 22px;
     font-family: HelveticaNeue;
     padding: 5px 13px;
-    width: 562px;
     font-style:italic;
     line-height: 26px;
+    margin-right: 20px;
     span {
       color: $gold;
       font-style:italic;
@@ -100,9 +100,6 @@ $gold: #ffd62c;
     display: inline-block;
     padding: 5px 13px;
     text-align: center;
-    @media only screen and (max-width: 802px) {
-      display: none;
-    }
   }
 
   #cntdwn
