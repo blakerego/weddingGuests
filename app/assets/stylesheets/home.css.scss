@@ -125,6 +125,12 @@ $gold: #ffd62c;
     }
   }
 
+  .left .right {
+    img {
+      padding: 0 20px;
+    }
+  }
+
   .profile_label
   {
     margin: 15px auto;
@@ -168,8 +174,14 @@ $gold: #ffd62c;
   margin-top: 20px;
 }
 
+.receptionMap {
+  padding: 0 20px;
+}
 
 .travel {
+  h3 {
+    padding-left: 20px;
+  }
   .cursive {
     font-family: Pacifico;
     font-size: 22px;

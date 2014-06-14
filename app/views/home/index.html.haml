@@ -43,12 +43,12 @@
 
 .section.about
   .row
-    .profile.col-md-5.col-md-offset-1.col-sm-6.col-xs-12
+    .profile.col-md-5.col-md-offset-1.col-sm-6.col-xs-12.left
       .profile_label
         Michelle
       = image_tag "michelle.jpg"
 
-    .profile.col-md-5.col-sm-6.col-xs-12
+    .profile.col-md-5.col-sm-6.col-xs-12.right
       .profile_label
         Blake
       = image_tag "blake.jpg"
@@ -71,9 +71,9 @@
         %br
           Thirty minutes later, Michelle came home and smelled something amazing cooking as she walked down the hallway. When she opened the door, she was surprised to see rose petals lining the table, candles, wine, and a bouquet of beautiful roses. Moreover, Blake had prepared a gourmet meal of steak, potatoes and asparagus with some help from a kind employee at Whole Foods. Blake immediately got down on one knee and proposed. Michelle cried of course, and said yes!
 
-  .profile.col-md-5.col-md-offset-1.col-sm-6.col-xs-12
+  .profile.col-md-5.col-md-offset-1.col-sm-6.col-xs-12.left
     = image_tag "proposal1.jpg"
-  .profile.col-md-5.col-sm-6.col-xs-12
+  .profile.col-md-5.col-sm-6.col-xs-12.right
     = image_tag "ring.jpg"
 
 .section.attendants.row
@@ -132,7 +132,7 @@
       Fort Lauderdale, FL 33136
       %br
 
-    %iframe.map{:frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3582.91954099498!2d-80.114803!3d26.101544999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d900160af9b323%3A0xcd879c9606358b24!2sHyatt+Regency+Pier+Sixty-Six!5e0!3m2!1sen!2sus!4v1402268155230", :style => "border:0", :width => "100%"}
+    %iframe.map{:frameborder => "0", :height => "450", :class => 'receptionMap', :src => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3582.91954099498!2d-80.114803!3d26.101544999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d900160af9b323%3A0xcd879c9606358b24!2sHyatt+Regency+Pier+Sixty-Six!5e0!3m2!1sen!2sus!4v1402268155230", :style => "border:0", :width => "100%"}
 
     %h3.cursive
       Reception
