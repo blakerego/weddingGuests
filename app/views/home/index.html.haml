@@ -2,27 +2,27 @@
 .top
   = image_tag 'pier66.jpg', :id => 'featuredImage'
   %ul.nav
-    %li#couple_nav.nav_button{"data-target" => "#couple"}
+    %li#couple_nav.nav_button
       %span.underline
-        %a{:href => "#"}
+        %a{:href => "#couple"}
           The Couple
-    %li#proposal_nav.nav_button{"data-target" => "#couple"}
+    %li#proposal_nav.nav_button
       %span.underline
-        %a{:href => "#"}
+        %a{:href => "#proposal"}
           Proposal
-    %li#party_nav.nav_button{"data-target" => "#couple"}
+    %li#party_nav.nav_button
       %span.underline
-        %a{:href => "#"}
+        %a{:href => "#weddingParty"}
           Wedding Party
-    %li#rsvp_nav.nav_button{"data-target" => "#couple"}
+    %li#rsvp_nav.nav_button
       %span.underline
-        %a{:href => "#"}
+        %a{:href => "#rsvp"}
           RSVP
-    %li#travel_nav.nav_button{"data-target" => "#couple"}
+    %li#travel_nav.nav_button
       %span.underline
-        %a{:href => "#"}
+        %a{:href => "#travel"}
           Travel Info
-    %li#registry_nav.nav_button{"data-target" => "#couple"}
+    %li#registry_nav.nav_button
       %span.underline
         %a{:href => "http://www.amazon.com/registry/wedding/3GBUX9DHBTZHT"}
           Registry
@@ -41,7 +41,7 @@
           The ceremony begins in:
       %span#cntdwn.yellow-box
 
-.section.travel
+.section.travel#travel
   .title
     Travel Info
 
@@ -111,7 +111,7 @@
       Moreover, Miami is a relatively short drive from Ft. Lauderdale. If you plan on visiting Miami at all during your stay here, rental a car would be essential.
 
 
-.section.about
+.section.about#couple
   .title
     About Us
 
@@ -191,7 +191,7 @@
 
 
 
-.section.proposal.row
+.section.proposal.row#proposal
   .title
     Proposal
   .text.col-md-8.col-md-offset-2
@@ -207,7 +207,7 @@
   .profile.col-md-5.col-sm-6.col-xs-12.right
     = image_tag "ring.jpg"
 
-.section.attendants.row
+.section.attendants.row#weddingParty
   .title
     Wedding Party
   .row.portraits
