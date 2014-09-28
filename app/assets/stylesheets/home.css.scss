@@ -179,7 +179,6 @@ $gold: #ffd62c;
 }
 
 .travel {
-  margin-bottom: 1840px;
   h3 {
     padding-left: 20px;
   }
@@ -216,6 +215,12 @@ $gold: #ffd62c;
 .col-xs-12 {
   img {
     text-align: center;
+  }
+}
+
+.short {
+  .title {
+    margin-bottom: 20px;
   }
 }
 

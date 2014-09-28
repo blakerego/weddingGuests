@@ -27,7 +27,7 @@
         %a{:href => "#registry"}
           Registry
 
-.section.intro
+.section.row.intro
   .row
     .welcome-box.col-lg-5.col-lg-offset-3.col-md-7.col-md-offset-1.col-sm-7.col-sm-offset-1.col-xs-12
       Hello!  Welcome to our wedding website. We can’t wait to celebrate our wedding on January 17, 2015 with everyone. Until then, take some time to explore our site and plan your travels.
@@ -41,7 +41,7 @@
           The ceremony begins in:
       %span#cntdwn.yellow-box
 
-.section.travel#travel
+.section.row.travel#travel
   .title
     Travel Info
 
@@ -111,28 +111,30 @@
       Moreover, Miami is a relatively short drive from Ft. Lauderdale. If you plan on visiting Miami at all during your stay here, rental a car would be essential.
 
 
-.section.rsvp#rsvp
+.section.row.rsvp.short#rsvp
   .title
     RSVP
 
-  %p
-    You should have received an RSVP card within your invitation. Please fill out this card and return it to us at your earliest convenience, but no later than December 1, 2014.
+  .text.row.col-md-8.col-md-offset-2.col-xs-12
+    %p
+      You should have received an RSVP card within your invitation. Please fill out this card and return it to us at your earliest convenience, but no later than December 1, 2014.
 
-  %p
-    If you have misplaced your card, please contact Michelle at michelle<dot>e<dot>rittner@gmail.com.
+    %p
+      If you have misplaced your card, please contact Michelle at michelle<dot>e<dot>rittner@gmail.com.
 
-.section.registry#registry
+.section.row.registry.short#registry
   .title
     Registry
 
-  %p 
-    We are using Amazon for our wedding registry. If you would like to buys us a gift, see the suggestions we have picked out at the link below.
+  .text.row.col-md-8.col-md-offset-2.col-xs-12
+    %p
+      We are using Amazon for our wedding registry. If you would like to buys us a gift, see the suggestions we have picked out at the link below.
 
-  %a{:href => 'http://www.amazon.com/registry/wedding/3GBUX9DHBTZHT'}
-    Our Wedding Registry
+    %a{:href => 'http://www.amazon.com/registry/wedding/3GBUX9DHBTZHT'}
+      Our Wedding Registry
 
 
-.section.about#couple
+.section.row.about#couple
   .title
     About Us
 
@@ -212,7 +214,7 @@
 
 
 
-.section.proposal.row#proposal
+.section.row.proposal.row#proposal
   .title
     Proposal
   .text.col-md-8.col-md-offset-2
@@ -228,7 +230,7 @@
   .profile.col-md-5.col-sm-6.col-xs-12.right
     = image_tag "ring.jpg"
 
-.section.attendants.row#weddingParty
+.section.row.attendants.row#weddingParty
   .title
     Wedding Party
   .row.portraits
