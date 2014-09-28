@@ -130,7 +130,7 @@
       %h1 How We Met
 
       .stories
-        .story
+        .story.more
           %h2
             The Unexpected Umbrella
           %p
@@ -149,7 +149,7 @@
             Blake eventually made it to the party, and to his delight, Michelle was there too, carrying a 6-pack of Smithwicks (one of Blake’s favorites) that would break the ice between them. After the party, Blake walked her home, not realizing until months later the significance of the umbrella, or that night.
 
 
-        .story
+        .story.more
           %h2
             A Train Leaving the Station
           %p
@@ -173,7 +173,7 @@
           %p
             Blake made the slowly but surely departing train and found Jessica and her friends sitting comfortably, with one seat saved. Out of breath, Blake gathered himself to meet some new faces. Among those was a pretty girl he would come to know as Michelle.
 
-        .story
+        .story.more
           %h2
             No, Maybe, Yes: The Story of Our First Date
           %p
@@ -188,7 +188,6 @@
             However, by Friday night, Michelle started to feel sick. Her stomach hurt, and she was awake all night. She contemplated just texting Blake in the morning to cancel their date. By the morning though, she started to feel better, and thought it would be rude to cancel on him so late. After all, Blake assured her that he had already purchased chocolate covered pretzels and Capri Suns to sneak into the movie theater. 
           %p
             At noon, Michelle met Blake in front of Loews. Although Michelle had said yes to movie hopping, she figured she could always bow out after the first movie if things didn't go so well. As it turned out, they had a great time, and spent all day watching three movies back to back - the Facebook movie, a chick flick, and some scary movie (presumably so Blake had an excuse to hold Michelle's hand for the gory scenes). 
-
 
 
 .section.proposal.row
@@ -244,3 +243,38 @@
       = image_tag "journee.jpg"
       %h2 Journee Isip
 
+
+:javascript
+  $(document).ready(function() {
+    var showChar = 100;
+    var ellipsestext = "...";
+    var moretext = "more";
+    var lesstext = "less";
+    $('.more').each(function() {
+      var content = $(this).html();
+
+      if(content.length > showChar) {
+
+        var c = content.substr(0, showChar);
+        var h = content.substr(showChar-1, content.length - showChar);
+
+        var html = c + '<span class="moreelipses">'+ellipsestext+'</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+
+        $(this).html(html);
+      }
+
+    });
+
+    $(".morelink").click(function(){
+      if($(this).hasClass("less")) {
+        $(this).removeClass("less");
+        $(this).html(moretext);
+      } else {
+        $(this).addClass("less");
+        $(this).html(lesstext);
+      }
+      $(this).parent().prev().toggle();
+      $(this).prev().toggle();
+      return false;
+    });
+  });

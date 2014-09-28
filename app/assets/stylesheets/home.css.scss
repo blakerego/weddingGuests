@@ -207,6 +207,60 @@ $gold: #ffd62c;
   .title {
     margin-bottom: 40px;
   }
+  .stories {
+    .story {
+
+    a {
+      color: #0254EB
+    }
+    a:visited {
+      color: #0254EB
+    }
+    #header h2 {
+      color: white;
+      background-color: #00A1E6;
+      margin:0px;
+      padding: 5px;
+    }
+    .comment {
+      width: 400px;
+      background-color: #f0f0f0;
+      margin: 10px;
+    }
+    a.morelink {
+      text-decoration:none;
+      outline: none;
+    }
+    .morecontent span {
+      display: none;
+    }
+
+
+      &.collapsed {
+        max-height: 200px;
+
+        opacity: 0.5;
+        background: #999; /* for non-css3 browsers */
+
+        // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
+        // background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+        // background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+
+
+        // background-repeat: repeat-x;
+        // background-position: bottom right;
+        // background-image: url('white_gradient.png');
+        overflow: hidden;
+      }
+    }
+    .read-more {
+      // text-align: center;
+      // color: gray;
+      cursor: pointer;
+      text-align: right;
+      color: blue;
+    }
+  }
 }
 
 .proposal {
@@ -222,4 +276,6 @@ $gold: #ffd62c;
 body {
   overflow-x: hidden;
 }
+
+
 
