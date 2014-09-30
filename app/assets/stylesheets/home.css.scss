@@ -181,10 +181,6 @@ $gold: #ffd62c;
   margin-top: 20px;
 }
 
-.receptionMap {
-  padding: 0 20px;
-}
-
 .travel {
   margin-top: 50px;
   h3 {
@@ -267,4 +263,11 @@ body {
 span.dot {
   font-weight: normal;
   font-size: 15px;
+}
+
+.maps iframe{
+  pointer-events: none;
+  .receptionMap {
+    padding: 0 20px;
+  }
 }
