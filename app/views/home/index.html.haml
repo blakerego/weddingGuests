@@ -2,18 +2,6 @@
 .top
   = image_tag 'pier66.jpg', :id => 'featuredImage'
   %ul.nav
-    %li#couple_nav.nav_button
-      %span.underline
-        %a{:href => "#couple"}
-          The Couple
-    %li#proposal_nav.nav_button
-      %span.underline
-        %a{:href => "#proposal"}
-          Proposal
-    %li#party_nav.nav_button
-      %span.underline
-        %a{:href => "#weddingParty"}
-          Wedding Party
     %li#rsvp_nav.nav_button
       %span.underline
         %a{:href => "#rsvp"}
@@ -26,6 +14,18 @@
       %span.underline
         %a{:href => "#registry"}
           Registry
+    %li#couple_nav.nav_button
+      %span.underline
+        %a{:href => "#couple"}
+          The Couple
+    %li#proposal_nav.nav_button
+      %span.underline
+        %a{:href => "#proposal"}
+          Proposal
+    %li#party_nav.nav_button
+      %span.underline
+        %a{:href => "#weddingParty"}
+          Wedding Party
 
 .section.row.intro
   .row
@@ -42,6 +42,20 @@
           %p.ceremony-start-text
             The ceremony begins in:
         %span#cntdwn.yellow-box
+
+.section.row.rsvp.short#rsvp
+  .title
+    RSVP
+
+  .text.row.col-md-8.col-md-offset-2.col-xs-12
+    %p
+      You should have received an RSVP card within your invitation. Please fill out this card and return it to us at your earliest convenience, but no later than December 1, 2014.
+
+    %p
+      If you have misplaced your card, please contact Michelle at
+    .email
+      michelle &lt dot &gt e &lt dot &gt rittner &lt at &gt gmail &lt dot &gtcom.
+
 
 .section.row.travel#travel
   .title
@@ -115,19 +129,6 @@
     %p
       Moreover, Miami is a relatively short drive from Ft. Lauderdale. If you plan on visiting Miami at all during your stay here, rental a car would be essential.
 
-
-.section.row.rsvp.short#rsvp
-  .title
-    RSVP
-
-  .text.row.col-md-8.col-md-offset-2.col-xs-12
-    %p
-      You should have received an RSVP card within your invitation. Please fill out this card and return it to us at your earliest convenience, but no later than December 1, 2014.
-
-    %p
-      If you have misplaced your card, please contact Michelle at
-    .email
-      michelle &lt dot &gt e &lt dot &gt rittner &lt at &gt gmail &lt dot &gtcom.
 
 .section.row.registry.short#registry
   .title
