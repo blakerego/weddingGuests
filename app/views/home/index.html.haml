@@ -29,17 +29,19 @@
 
 .section.row.intro
   .row
-    .welcome-box.col-lg-5.col-lg-offset-3.col-md-7.col-md-offset-1.col-sm-7.col-sm-offset-1.col-xs-12
-      Hello!  Welcome to our wedding website. We can’t wait to celebrate our wedding on January 17, 2015 with everyone. Until then, take some time to explore our site and plan your travels.
-      %span
-        Don’t forget to RSVP!
-      — M & B
+    .intro-boxes
+      .welcome-box.col-lg-5.col-lg-offset-3.col-md-7.col-md-offset-1.col-sm-7.col-sm-offset-1.col-xs-12
+        Hello!  Welcome to our wedding website. We can’t wait to celebrate our wedding on January 17, 2015 with everyone. Until then, take some time to explore our site and plan your travels.
+        %span
+          %a{:href => '#rsvp'}
+            Don’t forget to RSVP!
+        — M & B
 
-    .col-lg-1.col-md-2.col-sm-2.hidden-xs
-      .yellow-box
-        %p.ceremony-start-text
-          The ceremony begins in:
-      %span#cntdwn.yellow-box
+      .col-lg-1.col-md-2.col-sm-2.hidden-xs
+        .yellow-box
+          %p.ceremony-start-text
+            The ceremony begins in:
+        %span#cntdwn.yellow-box
 
 .section.row.travel#travel
   .title
@@ -83,7 +85,10 @@
 
     %h1 Hotel Room Discounts
     %p
-      We have reserved a block of discounted rooms for Friday and Saturday night at the Hyatt Regency Pier Sixty-Six. If you wish to book one of these rooms, click here for details.
+      We have reserved a block of discounted rooms for Friday and Saturday night at the Hyatt Regency Pier Sixty-Six. If you wish to book one of these rooms, click 
+      %a{:href => 'https://resweb.passkey.com/go/RittnerRegoWedding'}
+        here
+      for details.
 
     %hr
 
@@ -120,7 +125,9 @@
       You should have received an RSVP card within your invitation. Please fill out this card and return it to us at your earliest convenience, but no later than December 1, 2014.
 
     %p
-      If you have misplaced your card, please contact Michelle at michelle<dot>e<dot>rittner@gmail.com.
+      If you have misplaced your card, please contact Michelle at
+    .email
+      michelle &lt dot &gt e &lt dot &gt rittner &lt at &gt gmail &lt dot &gtcom.
 
 .section.row.registry.short#registry
   .title
@@ -128,10 +135,16 @@
 
   .text.row.col-md-8.col-md-offset-2.col-xs-12
     %p
-      We are using Amazon for our wedding registry. If you would like to buys us a gift, see the suggestions we have picked out at the link below.
+      We are using Amazon and Bed Bath & Beyond as our wedding registries. If you would like to buys us a gift, please see the items we have selected within the links below.
 
-    %a{:href => 'http://www.amazon.com/registry/wedding/3GBUX9DHBTZHT'}
-      Our Wedding Registry
+    .registry-icons
+      %span.icon.amazon
+        %a{:href => 'http://www.amazon.com/registry/wedding/3GBUX9DHBTZHT'}
+          = image_tag "amazon.png"
+      %span.icon
+        %a{:href => 'https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=541589653&eventType=Wedding'}
+          = image_tag "bbb.png"
+
 
 
 .section.row.about#couple
@@ -150,11 +163,12 @@
       = image_tag "blake.jpg"
 
     .text.col-md-8.col-md-offset-2.how-we-met.text.row
-      %h1 How We Met
+      .story-header
+        Stories from the Beginning
 
       .stories
         .story
-          %h2
+          %h1
             The Unexpected Umbrella
           %p
             It was a cool and cloudy autumn evening, around dusk, when Blake set off from his Boston apartment dressed in a tacky French buret to attend one of George’s (Michelle’s law school classmate) themed annual “Snob Parties”.  At the time Blake barely knew Michelle, but were on the peripheries of each other’s friend circles. 
@@ -173,7 +187,7 @@
 
 
         .story
-          %h2
+          %h1
             A Train Leaving the Station
           %p
             It was a bright Spring weekend morning when Blake awoke, slightly hungover, to his cell phone ringing loudly in his ear. He sleepily picked up the phone to hear Jessica, Michelle’s future bridesmaid, looking for him. 
@@ -197,7 +211,7 @@
             Blake made the slowly but surely departing train and found Jessica and her friends sitting comfortably, with one seat saved. Out of breath, Blake gathered himself to meet some new faces. Among those was a pretty girl he would come to know as Michelle.
 
         .story
-          %h2
+          %h1
             No, Maybe, Yes: The Story of Our First Date
           %p
             It was a chilly Thursday night in Boston, and Michelle found herself at Beantown Pub for yet another law school social event. Unbeknownst to Michelle, Jessica had invited Blake to join them as it was only a few blocks from his apartment. After arriving at the bar, Michelle realized that aside from Jessica, she didn't really know anyone else there. She was sitting on a stool, fidgeting awkwardly, when suddenly, Blake got up and invited everyone to play a game of pool. "Michelle's on my team," shouted Blake as they gathered around the table. 

@@ -53,6 +53,7 @@ $gold: #ffd62c;
 .section {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 80px;
 
   h1 {
     font-size: 28px;
@@ -78,28 +79,34 @@ $gold: #ffd62c;
     line-height: 60px;
   }
 
-  .welcome-box {
-    border: 5px dotted black;
-    color: black;
-    font-size: 22px;
-    font-family: HelveticaNeue;
-    padding: 5px 13px;
-    font-style:italic;
-    line-height: 26px;
-    margin-right: 20px;
-    span {
-      color: $gold;
+  .intro-boxes {
+    margin-top: 32px;
+    .welcome-box {
+      border: 5px dotted black;
+      color: black;
+      font-size: 22px;
+      font-family: HelveticaNeue;
+      padding: 5px 13px;
       font-style:italic;
+      line-height: 26px;
+      margin-right: 20px;
+      span {
+        a {
+          color: $gold;
+          font-style:italic;
+        }
+      }
     }
-  }
 
-  .yellow-box {
-    width: 220px;
-    height: auto;
-    background-color: $gold;
-    display: inline-block;
-    padding: 5px 13px;
-    text-align: center;
+    .yellow-box {
+      width: 220px;
+      height: auto;
+      background-color: $gold;
+      display: inline-block;
+      padding: 5px 13px;
+      text-align: center;
+    }
+
   }
 
   #cntdwn
@@ -179,6 +186,7 @@ $gold: #ffd62c;
 }
 
 .travel {
+  margin-top: 50px;
   h3 {
     padding-left: 20px;
   }
@@ -220,11 +228,39 @@ $gold: #ffd62c;
 
 .short {
   .title {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
+  .email {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
 }
+
+.story-header {
+  font-family: 'Pacifico';
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 
 body {
   overflow-x: hidden;
+}
+
+.registry-icons {
+  text-align: center;
+  margin-top: 40px;
+  .icon {
+    &.amazon {
+      img {
+        margin-top: 26px;
+      }
+    }
+    margin-right: 35px;
+  }
 }
 
