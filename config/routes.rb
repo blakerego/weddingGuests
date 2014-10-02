@@ -6,7 +6,7 @@ Diner::Application.routes.draw do
   # devise_for :users
   # get 'auth/:provider/callback' => 'authentications#create'
 
-  # root 'home#index'
-  root 'home#coming_soon'
+  root 'home#index'
+  # root 'home#coming_soon'
   get '/home' => 'home#index'
 end
