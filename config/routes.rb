@@ -9,4 +9,5 @@ Diner::Application.routes.draw do
   root 'home#index'
   # root 'home#coming_soon'
   get '/home' => 'home#index'
+  get 'googlebf1ff6cd0f3f0f25' => 'home#googlebf1ff6cd0f3f0f25'
 end
