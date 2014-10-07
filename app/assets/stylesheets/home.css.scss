@@ -68,6 +68,12 @@ $gold: #ffd62c;
     padding-bottom: 20px;
   }
 
+  &.about {
+    h1 {
+      margin-top: 30px;
+    }
+  }
+
   .title
   {
     color:black;
@@ -223,6 +229,14 @@ $gold: #ffd62c;
   .title {
     margin-bottom: 40px;
   }
+  .knowing-voice {
+    font-style: italic;
+    .separator {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
 }
 
 .proposal {
@@ -250,7 +264,7 @@ $gold: #ffd62c;
 
 .story-header {
   font-family: 'Pacifico';
-  margin-top: 20px;
+  margin: 30px 0 30px 0;
   font-size: 30px;
   text-align: center;
 }
