@@ -54,7 +54,7 @@ if (typeof(BackColor)=="undefined")
 if (typeof(ForeColor)=="undefined")
   ForeColor= "black";
 if (typeof(TargetDate)=="undefined")
-  TargetDate = "01/17/2015 5:00 PM";
+  TargetDate = "01/17/2015 4:30 PM";
 if (typeof(DisplayFormat)=="undefined")
   DisplayFormat = "<span class='days'>%%D%% Days</span><br /> <span class='hours'>%%H%% Hours & %%M%% Minutes</span>";
 if (typeof(CountActive)=="undefined")
